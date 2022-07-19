@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar li{
+    list-style: none;
+    margin: 20px;
+    
+}
+.navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.projectsContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projectCard{
+    height: 380px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgb(213, 200, 200), -5px -5px 5px rgb(202, 164, 164);
+    margin: 20px;
+    padding: 20px;
+    transition: ease-in 0.5s;
+}
+.projectCard:hover{
+    transform: translateY(-10px);
+    
+}
+h1{
+    margin-bottom: 30px;
+}
+
+.projectCard img{
+    animation: img1 5s linear  infinite ;
+}
+@keyframes img1 {
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+button{
+    height: 50px;
+    width: 100px;
+    margin-bottom: 15px;
+}

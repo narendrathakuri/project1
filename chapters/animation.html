@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+.div1{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    /* 1st value = move from left to right-x-axis */
+    /* 2nd value = move from top to bottom -y-axis*/
+    transform: translate(500px,500px);
+
+    /* x = move from left to right
+    transform: translateX(500px);
+     /* y = move from top to bottom*/
+    /* transform: translateY(100px); */ */
+}
+.div2{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    animation: animate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes animate {
+    from{
+        transform: translate(0px);
+    }
+    to{
+        transform: translate(400px);
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- transform:translate() -->
+    <div class="div1">
+        translate
+    </div>
+
+    <div class="div2">animation translate</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul{
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: space-around;
+            background-color: black;
+            height: 70px;
+            
+        }
+
+        li{
+            color: white;
+            font-size: 20px;
+            margin: 0 20px;
+        }
+        .home{
+            flex-grow: 1;
+            background-color: green;
+        }
+        .about{
+            flex-grow: 1;
+            background-color: red;
+        }
+        .contact{
+            flex-grow: 1;
+            background-color: blue;
+        }
+        .services{
+            flex-grow: 1;
+            background-color:gray;
+        }
+        .products{
+            flex-grow: 1;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- flexbox -->
+    <ul>
+    <li class="home">Home</li>
+    <li class="about">About</li>
+    <li class="contact">Contact</li>
+    <li class="services">Services</li>
+    <li class="products">Products</li>
+    </ul>
+</body>
+</html>

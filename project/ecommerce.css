@@ -1,0 +1,333 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   /* font-family: 'Dancing Script', cursive; */
+   
+}
+
+.navbar {
+   background-color: #FAFAFA;
+}
+
+.navbar ul {
+   height: 100px;
+   display: flex;
+   list-style: none;
+   justify-content: flex-start;
+   align-items: center;
+   margin-left: 100px;
+}
+
+.navbar ul li {
+   margin: 0 20px;
+}
+
+.navbar ul li a {
+   text-decoration: none;
+   color: black;
+}
+
+.navbar ul li:nth-child(2):hover {
+   text-decoration: underline;
+}
+
+.navbar ul li:nth-child(4):hover {
+   text-decoration: underline;
+}
+
+li {
+   font-size: large;
+}
+
+.list1 {
+   box-shadow: 2px 2px 5px rgb(83, 80, 80);
+   padding: 5px 10px;
+   border-radius: 3px;
+   transition: ease-in 0.5s;
+   height: fit-content;
+   width: fit-content;
+   background-color: #f2f2f2;
+   font-size: large;
+}
+
+.list1:hover {
+   background-color: rgb(45, 45, 87);
+}
+
+.list1 a:hover {
+   color: white;
+}
+
+
+.carausel {
+   display: flex;
+   justify-content: space-around;
+   height: 50vh;
+   background-color: rgb(230, 230, 230);
+}
+
+img {
+   height: 180px;
+   width: 250px;
+}
+
+.c-left {
+   padding: 150px;
+   margin-top: -30px;
+}
+
+.c-left button {
+   background-color: rgb(108, 163, 41);
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   margin-top: 20px;
+   font-size: medium;
+}
+
+.c-right {
+   height: 350px;
+   width: 500px;
+   margin: 10px;
+   background-color: white;
+   box-shadow: 5px 5px 10px rgb(224, 198, 198);
+   position: relative;
+   overflow: hidden;
+}
+
+.c-right img {
+   margin-bottom: 20px;
+}
+
+.c-right h4 {
+   margin: 0 15px;
+}
+
+.c-right p {
+   margin: 0 15px;
+   margin-bottom: 20px;
+}
+
+.c-right h5 {
+   margin: 5px 15px;
+   font-weight: normal;
+   font-size: 18px;
+}
+
+.c-right h5 span {
+   color: green;
+}
+
+.sales {
+   display: flex;
+   justify-content: space-between;
+  
+}
+.sales button{
+   margin-top: 13px;
+}
+
+.icons {
+   margin-right: 20px;
+   margin-top: -25px;
+}
+
+.icons button {
+   padding: 10px 20px;
+}
+
+.icons .cart {
+   padding: 10px 10px;
+   border: 1px solid brown;
+   background-color: gray;
+   color: white;
+}
+
+.icons.cart:hover {
+   background-color: purple;
+}
+
+.icons button:hover {
+   background-color: purple;
+}
+
+#margin2 {
+   margin-right: 30px;
+}
+
+.tagIcon {
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   transform: rotate(90deg);
+   font-size: 25px;
+   color: white;
+   z-index: 1;
+}
+
+.c-right::after {
+   content: "";
+   display: block;
+   width: 85px;
+   height: 150px;
+   position: absolute;
+   background-color: green;
+   top: -90px;
+   right: 230px;
+   transform: rotate(47deg);
+}
+
+.icons button:hover {
+   background-color: rgb(149, 102, 149);
+}
+
+.sales p {
+   position: relative;
+
+}
+
+.card {
+   height: 350px;
+   width: 360px;
+   margin: 10px;
+   background-color: white;
+   box-shadow: 5px 5px 10px rgb(224, 198, 198);
+}
+
+.background {
+   background-image: url("https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_639,h_416/https://blog.snappa.com/wp-content/uploads/2019/03/Screen-Shot-2019-03-28-at-1.11.59-PM.png");
+   height: 170px;
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+.card:hover .test {
+  
+   box-shadow: 0px -15px 40px rgb(0, 0, 0);
+}
+
+.row1 {
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+   margin-right: 20px;
+   margin-left: 20px;
+}
+
+.row1 .sales1 {
+   display: flex;
+   justify-content: space-between;
+
+}
+
+.test {
+   margin-top: 35px;
+   height: 130px;
+   font-size: medium;
+}
+
+.test h5 span {
+   color: green;
+}
+
+.test h5 {
+   margin: 10px;
+   font-size: 18px;
+   font-weight: normal;
+}
+.sales1 button{
+   margin-top: 18px;
+   margin-right: 10px;
+}
+.sales1 p{
+   margin: 10px;
+}
+.subCard{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 20px;
+}
+.subCard button{
+   background-color: rgb(108, 163, 41);
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   margin-top: 20px;
+   margin-right: 30px;
+   font-size: medium;
+   color: white;
+}
+.subCard h1{
+   margin-left: 20px;
+}
+.container2{
+   height: 100vh;
+   background-color: white;
+}
+.row-container1{
+   display: flex;
+   justify-content: space-evenly;
+   
+}
+
+
+.left-container{
+   height: 200px;
+   width: 40%;
+   background-color: black;
+   margin-left: 20px;
+   margin-top: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.right-container{
+   height: 200px;
+   width: 40%;
+   margin-left: 20px;
+   box-shadow: 10px 10px 10px rgb(0, 0, 0.5);
+   margin-top: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.left-container img{
+   height: 100px;
+}
+.right-container img{
+   height: 100px;
+}
+.test1{
+   display: flex;
+   flex-direction: column;
+}
+.test1 h2 a {
+   color: white;
+}
+.test1 p a{
+   color: white;
+}
+.test2 h2 a {
+   color: black;
+}
+.test2 p a{
+   color: black;
+}
+
+@media (max-width:800px) {
+   .navbar ul{
+      display: block;
+      height: 80px;
+      background-color: green;
+   }
+}
+@media (max-width:800px){
+   .carausel{
+      width: 800px;
+      display: block;
+   }
+}
+
+

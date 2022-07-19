@@ -1,0 +1,39 @@
+
+.box1 {
+    height: 430px;
+    width: 320px;
+    background-color: #FDFDFD;
+    padding: 20px;
+    border-radius: 2px;
+    border: 2px solid black;
+    box-shadow: 1px 1px 20px #C467D8;
+    font-family: fantasy;
+    display: block;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+}
+.product{
+    overflow: hidden;
+}
+
+.product>h3 {
+    text-align: center;
+}
+
+.product::after {
+    content: ' 20% off ';
+    background-color: #C467D8;
+    color: white;
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 1px 1px 10px #C467D8;
+    height: 46px;
+    width: 317px;
+    position: absolute;
+    top: 74px;
+    left: 36%;
+    transform: rotate(46deg);
+    font-size: 30px;
+    font-family: cursive;  
+}

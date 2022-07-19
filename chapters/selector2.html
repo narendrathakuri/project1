@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        *{
+            font-size: 60px;
+            /* background-image: linear-gradient(red, yellow, green); */
+            background-color:blueviolet;
+        }
+        .div1 + h1{
+            background-color: greenyellow;
+        }
+        .div2 ~ h2{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- adjacent selector symbol = '+'....div pachi ko jun first aucha teslai selector garcha.for eg div bhitrako h1 lai selector nagarera div ko bahira ko first lai select garcha-->
+    <div class="div1">
+        <h1>heading1</h1>
+    </div>
+    <h1>heading2</h1>  <!--yeslai select garcha-->
+    <h1>heading3</h1>
+
+    <!-- general selector= symbol '~' -->
+    <div class="div2">
+        <h2>heading1</h2>
+    </div>
+    <h2>heading2</h2> <!--dubai yeslai select garcha-->
+    <h2>heading3</h2> <!--yeslai select garcha-->
+</body>
+</html>

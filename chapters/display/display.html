@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+<style>
+ul li{
+    display: inline;
+    /* we cannot set height and width in inline */
+}
+.div1{
+display: inline;
+background-color: grey;
+height: 400px; /*kaam gardaina*/
+}
+.div2{ 
+    display: inline-block;
+    background-color: yellow;
+    color: black;
+    height: 400px;
+    width: 500px;
+
+}
+</style>
+   
+</head>
+<body> <!-- three types  -->
+    <!-- 1.Inline 2.inline-block 3.block -->
+
+    <!-- inline:takes the required width only, cannot set height and widht -->
+<ul>
+    <li>home</li>
+    <li>about</li>
+    <li>contacts</li>
+    <li>services</li>
+</ul>
+
+<div class="div1"> <!--inline block we can set height and width,no line break-->
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum corporis, tenetur accusamus neque repudiandae inventore et repellendus id facere itaque quos, sit voluptate! Ut officiis voluptate, aspernatur consequatur, iste in, molestias alias libero culpa quisquam quis impedit exercitationem saepe aperiam quibusdam dignissimos expedita cumque! Inventore alias fugiat aspernatur cumque numquam voluptate quod dolore totam?
+</div>
+<br><br>
+<div class="div2">  <!--block we can set height and widht,takes full width, display content vertically,line break-->
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum corporis, tenetur accusamus neque repudiandae inventore et repellendus id facere itaque quos, sit voluptate! Ut officiis voluptate, aspernatur consequatur, iste in, molestias alias libero culpa quisquam quis impedit exercitationem saepe aperiam quibusdam dignissimos expedita cumque! Inventore alias fugiat aspernatur cumque numquam voluptate quod dolore totam?
+</div>
+
+
+
+
+   
+    
+</body>
+</html>

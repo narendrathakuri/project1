@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            margin: 200px auto;
+            /* scale(1)=default value no change */
+            /* more than 1 or less than 1 value= larger,smaller */
+            transform: scale(3);
+            /* x-width,y-height */
+            /* transform:scaleX(2) */
+        }
+        .card{
+            height: 400px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 200px auto;
+            box-shadow: 10px 10px 5px rgb(157, 147, 147), -10px -10px 5px rgb(157, 147, 147);
+            animation-name: card;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes card {
+            from{
+                transform: translate(0px);
+            }
+            to {
+                transform: translate(400px);
+
+            }
+            }
+        }
+        img{
+            transition: ease-in 1s;
+        }
+        img:hover{
+            transform: scale(1.2);
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="div1">scale</div>
+
+    <div class="card">
+        <img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" height="200px" width="300px">
+        <h2>Camera</h2>
+        <p>Rs.45000</p>
+    </div>
+</body>
+</html>

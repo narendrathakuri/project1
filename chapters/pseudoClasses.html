@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pseudoClasses.css">
+    <style>
+        li:first-child {
+            background-color: green;
+        }
+
+        li:last-child {
+            background-color: blue;
+        }
+
+        li:nth-child(even) {
+            background-color: red;
+        }
+
+        h1::before {
+            content: 'welcome ';
+        }
+
+        h1::after {
+            content: ' GoodBye';
+        }
+
+        .div1::before {
+            content: '';
+            display: block;
+            width: 400px;
+            height: 400px;
+            background-color: green;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        img {
+            position: relative;
+            top: 97px;
+            left: 100px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .div1::after {
+            content: '';
+            display: block;
+            width: 400px;
+            height: 400px;
+            background-color: rgb(235, 55, 91);
+            position: absolute;
+            border-radius: 50%;
+            top: 269px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Hello list 1</li>
+        <li>Hello list 2</li>
+        <li>Hello list 3</li>
+        <li>Hello list 4</li>
+        <li>Hello list 5</li>
+        <li>Hello list 6</li>
+        <li>Hello list 7</li>
+        <li>Hello list 8</li>
+        <li>Hello list 9</li>
+
+    </ul> -->
+
+    <!-- before after pseudo classes ::-->
+    <h1>heading 1</h1>
+    <div class="div1">
+        <img src="https://thumbs.dreamstime.com/b/rainbow-love-heart-background-red-wood-60045149.jpg" alt=""
+            height="200px" width="200px">
+    </div>
+<center>
+    <div class="product">
+        <div class="image">
+            
+            <img src="https://www.wine-searcher.com/images/labels/11/38/11151138.jpg?width=260&height=260&fit=bounds&canvas=260,260" alt="" height="200px" width="200px"> 
+        </div>
+        <div class="desc">
+            <h3>Blue Label</h3>
+            <p>Rs.6000</p>
+        </div>
+        
+        <div class="label">
+            
+        </div>
+    </div>
+</center>
+</body>
+
+</html> -->

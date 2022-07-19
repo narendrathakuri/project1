@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* universal selector */
+        * {
+            background-color: white;
+            font-size: 50px;
+        }
+
+        /* child elements */
+
+        .divChild>h1 {
+            background-color: green;
+        }
+
+        .divChild>p {
+            background-color: green;
+        }
+
+        .divsubchild>h1 {
+            background-color: aqua;
+        }
+        .divDescendant h1{
+            background-color: grey;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <!-- types of selectors -->
+    <!-- 1.Universal selectors = applys to all content.It is denoted by * -->
+    <h2>Universal Selector</h2>
+    <p>i am selector universal</p>
+
+    <!--2.child selector symbol = ">" -->
+    <div class="divChild">
+        <!-- it is parent.it has 3 child elements-->
+        <h1>i am child one</h1>
+        <!--it is child elements-->
+        <p>i m also child</p>
+        <div class="divsubchild">
+            <h1>i m sub child</h1>
+        </div>
+    </div>
+<!-- 3.descendant selector -->
+    <div class="divDescendant">
+        <h1>i m super child</h1>
+        <h1>i m also super child</h1>
+        <div class="divSubDesc">
+            <h1>i m another super child</h1>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
